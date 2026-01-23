@@ -29,7 +29,7 @@ interface = PertAL(weight_bias_track =False,
                      )
 
 
-path = './data'
+path = './data/'
 interface.initialize_data(path = path,
                           dataset_name=f'{dataset_name}_essential_1000hvg',
                           batch_size = 256,
