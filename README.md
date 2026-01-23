@@ -56,13 +56,13 @@ python run.py --strategy PertAL --device 0 --dataset_name replogle_k562 --seed 1
 ### Datasets
 
 Due to data size and availability restrictions, the target dataset must be manually downloaded. You can access it from the following URL: [Dataset](https://drive.google.com/drive/folders/1Hh00_cO6oRBOU6kAzhyblaJ0xhJZfyGB?dmr=1&ec=wgc-drive-globalnav-goto).
-
 Make sure to download the dataset and place it in the appropriate directory `data` before running the program.
 
 ### Additional scripts
 
 - **Feature Kernel Generation**: If you need to build your own feature kernel, use the `Prior_kernel_preprocess.ipynb` notebook. This notebook guides you through the process of preprocessing and generating feature kernels for the perturb-seq data.
-- **LLM Prior Generation**: To generate the LLM prior, we provide the `LLM_prior_generator.py` script. Make sure to replace the API keys with your personal ones in the script to avoid any issues when connecting to the LLM API.
+- **LLM Prior Generation**: To generate the LLM prior, we provide the `LLM_prior_generator.py` script.
+  ⚠ Make sure to replace the API keys with your personal ones in the script to avoid any issues when connecting to the LLM API.
 
 ## 4. Acknowledgements
 
@@ -70,10 +70,6 @@ We would like to thank the authors of the following projects for their outstandi
 
 - The code in this project was inspired by the excellent work in [IterPert](https://github.com/Genentech/iterative-perturb-seq/tree/master) and [bmdal_reg](https://github.com/dholzmueller/bmdal_reg).
 
-## 5. License
-
-This project is licensed under the MIT License.
-
-## 6. Contact us
+## 5. Contact us
 
 If you have any questions or would like to learn more, feel free to reach out!

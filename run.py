@@ -21,7 +21,8 @@ llm_name=args.llm_name
 llm_weight=args.llm_weight
 
 # Initialize wandb experiment if weight_bias_track is True
-interface = PertAL(weight_bias_track =False, 
+# If wandb is not installed, please set weight_bias_track to False
+interface = PertAL(weight_bias_track =True, 
                      exp_name = f"{strategy}_{llm_name}_{dataset_name}_seed{seed}",
                      device = device, 
                      seed = seed,
@@ -35,7 +36,7 @@ interface.initialize_data(path = path,
                           batch_size = 256,
                           llm_name=llm_name)
 
-interface.initialize_model(epochs = 5, hidden_size = 64)
+interface.initialize_model(epochs = 20, hidden_size = 64)
 interface.initialize_active_learning_strategy(strategy = strategy,prior_scfm_kernel=prior_scfm_kernel)
 
-interface.start(n_init_labeled =3, n_round = 5, n_query =3,save_path='./results')
+interface.start(n_init_labeled =100, n_round = 5, n_query =100,save_path='./results')

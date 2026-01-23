@@ -6,6 +6,7 @@ from ..bmdal.feature_data import TensorFeatureData
 from ..bmdal.algorithms import select_batch, BatchSelectorImpl
 import torch
 import pickle
+from pathlib import Path
 
 def get_index(A, B):
     index_dict_A = {val: i for i, val in enumerate(A)}
@@ -130,7 +131,9 @@ class active_learning(Strategy):
             grad_scores=gradients[np.where(np.isin(pert_list, strategy.dataset.pert_train[~labeled_idxs]))[0]]
 
             print('Using llm...')
-            with open(f'../../data/{self.dataset_name}_kernels/knowledge_kernels_1k/{self.llm_name}_zcore/kernel.pkl','rb') as f:
+            base_path = Path(__file__).resolve().parents[2]
+
+            with open(f'{base_path}/data/{self.dataset_name}_kernels/knowledge_kernels_1k/{self.llm_name}_zcore/kernel.pkl','rb') as f:
                 llmscore=pickle.load(f)
             
             llm_scores=llmscore[np.where(np.isin(pert_list, strategy.dataset.pert_train[~labeled_idxs]))[0]]
