@@ -1,0 +1,21 @@
+# PyTorch Geometric CUDA extensions (CUDA 12.4 + PyTorch 2.4)
+#
+# Install with:
+#   pip install -r requirements-cuda.txt -f https://data.pyg.org/whl/torch-2.4.0+cu124.html
+#
+# To use a different CUDA version, change the --find-links URL above.
+# Available wheels: https://data.pyg.org/whl/
+
+
+# PyTorch Geometric CUDA extensions (CUDA 12.4 + PyTorch 2.4)
+#
+# Install with:
+#   pip install -r requirements-cuda.txt -f https://data.pyg.org/whl/torch-2.4.0+cu124.html
+#
+# To use a different CUDA version, change the --find-links URL above.
+# Available wheels: https://data.pyg.org/whl/
+
+torch-cluster==1.6.3
+torch-scatter==2.1.2
+torch-sparse==0.6.18
+torch-spline-conv==1.2.2

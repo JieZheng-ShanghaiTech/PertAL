@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.idea/
+htmlcov/
+
+# OMX / agent state
+.omx/
+
+# Outputs / artifacts
+results/
+outputs/
+res/
+
+# Data artifacts (keep notebooks/scripts, ignore downloaded datasets/kernels)
+data/*.h5ad
+data/*_kernels/
+data/**/*_kernels/
+data/**/*.pkl
+
+.ace-tool/

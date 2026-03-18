@@ -1,0 +1,3 @@
+epochs: 20
+hidden_size: 64
+

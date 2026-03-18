@@ -1,0 +1,8 @@
+name: replogle_k562_essential_1000hvg
+batch_size: 256
+test_fraction: 0.1
+
+# scFM prior kernel folder name under:
+#   data/<dataset>_kernels/knowledge_kernels_1k/<prior_scfm_kernel>/
+prior_scfm_kernel: scgpt_blood
+

@@ -1,3 +1,12 @@
+# PyTorch Geometric CUDA extensions (CUDA 12.4 + PyTorch 2.4)
+#
+# Install with:
+#   pip install -r requirements-cuda.txt -f https://data.pyg.org/whl/torch-2.4.0+cu124.html
+#
+# To use a different CUDA version, change the --find-links URL above.
+# Available wheels: https://data.pyg.org/whl/
+
+
 scanpy==1.9.8
 swankit
 swanlab
@@ -5,11 +14,11 @@ numpy
 pandas
 tqdm
 torch==2.4.0
-torch-geometric==2.6.1
-torch_cluster==1.6.3+pt24cu124
-torch_scatter==2.1.2+pt24cu124
-torch_sparse==0.6.18+pt24cu124
-torch_spline_conv==1.2.2+pt24cu124
+# torch-geometric==2.6.1
+# torch_cluster==1.6.3+pt24cu124
+# torch_scatter==2.1.2+pt24cu124
+# torch_sparse==0.6.18+pt24cu124
+# torch_spline_conv==1.2.2+pt24cu124
 torchaudio==2.4.0
 torchvision==0.19.0
 bmdal_reg

@@ -1,0 +1,5 @@
+name: replogle_rpe1_essential_1000hvg
+batch_size: 256
+test_fraction: 0.1
+prior_scfm_kernel: scgpt_blood
+

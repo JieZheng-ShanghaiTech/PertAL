@@ -1,0 +1,6 @@
+name: PertAL
+
+# Weights for the PertAL composite score
+llm_weight: 0.2
+gradient_weight: 0.2
+

@@ -1,0 +1,18 @@
+defaults:
+  - dataset: replogle_k562
+  - model: gears
+  - strategy: pertal
+  - llm: gpt41-mini
+  - dir: default
+
+seed: 1
+device: 0
+
+tracking:
+  enable: true
+
+al:
+  n_init_labeled: 100
+  n_rounds: 5
+  n_query: 100
+
