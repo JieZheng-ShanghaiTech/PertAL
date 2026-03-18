@@ -310,7 +310,7 @@ All metrics are computed on the top 20 differentially expressed (DE) genes per p
 
 ---
 
----
+
 
 ## 4. Project structure
 
