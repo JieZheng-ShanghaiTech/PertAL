@@ -98,7 +98,7 @@ class PertAL:
             
         if self.dataset_name == 'replogle_k562_essential_1000hvg':
             kernel_list=[prior_scfm_kernel]
-            kernel_list.extend(['rpe1_kernel','ops_A549_kernel', 'biogpt_kernel',
+            kernel_list.extend(['rpe1_kernel','ops_A549_kernel', 
                                 'ops_HeLa_HPLM_kernel', 'ops_HeLa_DMEM_kernel'])
         
         elif self.dataset_name =='replogle_rpe1_essential_1000hvg':

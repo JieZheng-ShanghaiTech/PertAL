@@ -203,6 +203,14 @@ python run.py \
   --llm_weight 0.2
 ```
 
+### SwanLab setup
+We use [SwanLab](https://swanlab.cn/) for optional experiment tracking.  
+If you want to sync and log experiment results, please install SwanLab first:
+```bash
+python -m pip install swanlab
+```
+If you do not want to use SwanLab, please set set `weight_bias_track = False` in `run.py`.
+
 #### Key parameters
 
 Here are the key parameters you can pass to the script:

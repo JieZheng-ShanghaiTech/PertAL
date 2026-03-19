@@ -22,7 +22,7 @@ llm_weight=args.llm_weight
 
 # Initialize wandb experiment if weight_bias_track is True
 # If wandb is not installed, please set weight_bias_track to False
-interface = PertAL(weight_bias_track =True, 
+interface = PertAL(weight_bias_track =False, 
                      exp_name = f"{strategy}_{llm_name}_{dataset_name}_seed{seed}",
                      device = device, 
                      seed = seed,
