@@ -114,8 +114,8 @@ data/
 │       ├── ground_truth_delta/
 │       ├── ops_A549_kernel/
 │       ├── ops_HeLa_HPLM_kernel/
-│       ├── ops_HeLa_DMEM_kernel/
-│       └── biogpt_kernel/
+│       └── ops_HeLa_DMEM_kernel/
+│       
 └── Prior_kernel_preprocess.ipynb
 ```
 > The scFM kernel (`scgpt_blood` by default) is specified via `--prior_scfm_kernel`.
