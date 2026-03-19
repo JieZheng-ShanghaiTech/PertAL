@@ -58,7 +58,7 @@ We provide two options for installing dependencies.
 **Option 1:** Install from `requirements.txt`
 
 ```bash
-pip install -r requirements_final.txt
+pip install -r requirements.txt
 ```
 This will install the necessary libraries and dependencies required to run the project.
 
