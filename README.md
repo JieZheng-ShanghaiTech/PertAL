@@ -111,7 +111,7 @@ data/
 │   └── knowledge_kernels_1k/
 │       ├── scgpt_blood/
 │       ├── rpe1_kernel/
-│       ├── k562_kernel/
+│       ├── ground_truth_delta/
 │       ├── ops_A549_kernel/
 │       ├── ops_HeLa_HPLM_kernel/
 │       ├── ops_HeLa_DMEM_kernel/
