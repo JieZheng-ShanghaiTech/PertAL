@@ -109,6 +109,7 @@ data/
 └── Prior_kernel_preprocess.ipynb
 ```
 > The scFM kernel (`scgpt_blood` by default) is specified via `--prior_scfm_kernel`.
+
 > OPS data is sourced from [Broad PERISCOPE](https://github.com/broadinstitute/2022_PERISCOPE).
 
 ### Build custom kernels
