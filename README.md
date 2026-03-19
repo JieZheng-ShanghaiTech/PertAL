@@ -55,19 +55,25 @@ conda activate pertAL
 ### Install dependencies
 We provide two options for installing dependencies.
 
-**Option 1:** Install from `requirements.txt`
+**Option 1:** Install from pyproject.toml
+
+We recommend upgrading packaging tools first：
+```bash
+python -m pip install --upgrade pip
+pip install --upgrade setuptools
+```
+Then install the package in editable mode:
+```bash
+pip install -e .
+```
+This will install the necessary libraries and dependencies required to run the project.
+
+
+**Option 2:** Install from `requirements.txt`
 
 ```bash
 pip install -r requirements.txt
 ```
-This will install the necessary libraries and dependencies required to run the project.
-
-**Option 2:** Install from pyproject.toml
-
-```bash
-pip install -e .
-```
-
 
 **Note: Install PyTorch Geometric CUDA extensions**
 
@@ -96,7 +102,11 @@ Due to data size and availability restrictions, the target dataset must be manua
 
 ```
 data/
-├── <dataset>.h5ad files
+├── <dataset>.h5ad
+|── go_essential_all
+|── essential_all_data_pert_genes.pkl
+|── gene2go_all.pkl
+|── <dataset>_essential_1000hvg
 ├── <dataset>_kernels/
 │   └── knowledge_kernels_1k/
 │       ├── scgpt_blood/
